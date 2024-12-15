@@ -1,0 +1,13 @@
+:root {
+  --black: #000000;
+  --grey: #333333;
+  --light-black: #1f1f1f;
+  --white: #ffffff;
+  --light-green: #c4f82a;
+
+  --large-font-size: 2.4rem;
+  --large-line-height: 1.5;
+
+  --middle-font-size: 1.4rem;
+  --middle-line-height: 1.5;
+}

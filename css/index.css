@@ -1,0 +1,120 @@
+@import "./root.css";
+/* Font styles */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v18-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v18-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v18-latin-700.woff2") format("woff2");
+}
+/* Global styles */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter";
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  width: 38.4rem;
+  height: 61.1rem;
+  padding: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--light-black);
+  color: var(--white);
+}
+.card__box {
+  width: 30.4rem;
+  height: 53.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__img {
+  width: 8.8rem;
+  height: 8.8rem;
+  border-radius: 50%;
+  margin-bottom: 2.4rem;
+}
+.card__title {
+  font-weight: 600;
+  font-size: var(--large-font-size);
+  line-height: var(--large-line-height);
+  margin-bottom: 0.4rem;
+}
+.card__subtitle {
+  font-weight: 700;
+  font-size: var(--middle-font-size);
+  line-height: var(--middle-line-height);
+  color: var(--light-green);
+  margin-bottom: 2.4rem;
+}
+.card__description {
+  font-weight: 400;
+  font-size: var(--middle-font-size);
+  line-height: var(--middle-line-height);
+  margin-bottom: 2.4rem;
+}
+
+.card__list__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+.card__list__link {
+  display: inline-block;
+  padding: 1.2rem 9.5rem;
+  border-radius: 1.2rem;
+  color: var(--white);
+  background-color: var(--grey);
+  font-weight: 700;
+  font-size: var(--middle-font-size);
+  line-height: var(--middle-line-height);
+}
+
+.card__list__link:hover {
+  background-color: var(--light-green);
+  color: var(--black);
+}
+
+.card__list__link:active {
+  opacity: 60%;
+}
